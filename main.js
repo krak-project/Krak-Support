@@ -19,7 +19,7 @@ const tickets_db = {};
 const timeout_db = {};
 var ticket_id = uuid.v4()
 
-const client_sup = new Client({
+const client = new Client({
     intents: [
         Intents.FLAGS.GUILDS,
         Intents.FLAGS.GUILD_MEMBERS,
@@ -32,9 +32,9 @@ const client_sup = new Client({
 })
 
 discordModals(client);
-client_sup.login(process.env.TOKEN)
+client.login(process.env.TOKEN)
 
-client_sup.on('ready', async () => {
+client.on('ready', async () => {
     console.log('Bot is ready!')
     client.user.setActivity('DMs for help', { type: 'WATCHING' })
 
