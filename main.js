@@ -2,7 +2,7 @@
 
 const prefix = 's!';
 const timeout_duration = 5 * 60 * 1000; // 5 minutes
-const receive_channel = '956237822845665374';
+const receive_channel = '961715392500355072';
 
 
 //============///
